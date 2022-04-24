@@ -1,4 +1,6 @@
-package com.company;
+package com.company.people;
+
+import com.company.address.Address;
 
 public class Teacher extends People {
 
@@ -10,16 +12,24 @@ public class Teacher extends People {
     }
 
     public void displayInfo() {
-        System.out.println(name + " " +soname+ ", " + age + " лет, " + address.displayInfo());
+        System.out.println(name + " " + soname + ", " + age + " лет, " + address.displayInfo());
     }
 
     public void displayPay() {
         int workHour = 140;
         int workRate = 10;
         System.out.println(workHour * workRate);
-        }
+    }
 
-        void changeWorkHour(Integer newWorkHour) {
-        workHour = newWorkHour;
-        }
+    void workHourChange(Integer newworkHour) {
+        workHour = newworkHour;
+        System.out.println(workHour * workRate);
+    }
+
+    void workRateChange(Integer newworkRate) {
+        workRate = newworkRate;
+        System.out.println(workHour * workRate);
+    }
 }
+
+

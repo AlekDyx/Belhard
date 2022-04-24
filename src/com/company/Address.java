@@ -1,24 +1,24 @@
-package com.company;
+package com.company.address;
 
 public class Address {
-    private String sity;
+    private String city;
     private String street;
     private int homeNumber;
     private int appNumber;
 
-    public Address(String sity, String street, int homeNumber, int appNumber) {
-        this.sity = sity;
+    public Address(String city, String street, int homeNumber, int appNumber) {
+        this.city = city;
         this.street = street;
         this.homeNumber = homeNumber;
         this.appNumber = appNumber;
     }
 
     public String displayInfo() {
-        return "г." + sity + ", ул. " + street + ", дом " + homeNumber + ", квартира " + appNumber;
+        return "г." + city + ", ул. " + street + ", дом " + homeNumber + ", квартира " + appNumber;
     }
 
     public String getSity() {
-        return sity;
+        return city;
     }
 
     public String getStreet() {
@@ -33,8 +33,8 @@ public class Address {
         return appNumber;
     }
 
-    public void setSity(String sity) {
-        this.sity = sity;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public void setStreet(String street) {
