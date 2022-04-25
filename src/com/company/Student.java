@@ -16,8 +16,8 @@ public class Student extends People {
         students.add(student2);
     }
 
-    public void displayInfo() {
-        System.out.println(name + " " +soname+ ", " + age + " лет, " + address.displayInfo());
+    public String toString() {
+        return name + " " +soname+ ", " + age + " лет, " + address.displayInfo();
     }
 
 }

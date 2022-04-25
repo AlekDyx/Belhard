@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Group {
     private String name;
@@ -15,9 +14,9 @@ public class Group {
         this.students = students;
     }
 
-    public void displayInfo() {
-        System.out.println(students.forEach(System.out::println));
-            }
+//    public void displayInfo() {
+//        System.out.println(students.forEach(System.out::println));
+//            }
 
     public String getName() {
         return name;

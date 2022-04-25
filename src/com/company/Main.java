@@ -7,7 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        student1.displayInfo();
+        student1.toString();
+        System.out.println(students.forEach(System.out::println));
 
         Group group = new Group("38 курс", teacher, students);
         group.toString();

@@ -9,9 +9,9 @@ public class Teacher extends People {
         super(name, soname, age, address);
     }
 
-////    public String toString() {
-////        return System.out.println(name + " " + soname + ", " + age + " лет, " + address.displayInfo());
-//    }
+    public String toString() {
+        return name + " " + soname + ", " + age + " лет, " + address.displayInfo();
+    }
 
     public void displayPay() {
         int workHour = 140;
