@@ -1,4 +1,4 @@
-package com.company.address;
+package com.company;
 
 public class Address {
     private String city;
@@ -17,7 +17,7 @@ public class Address {
         return "г." + city + ", ул. " + street + ", дом " + homeNumber + ", квартира " + appNumber;
     }
 
-    public String getSity() {
+    public String getCity() {
         return city;
     }
 

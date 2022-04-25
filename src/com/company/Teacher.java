@@ -1,6 +1,4 @@
-package com.company.people;
-
-import com.company.address.Address;
+package com.company;
 
 public class Teacher extends People {
 
@@ -11,9 +9,9 @@ public class Teacher extends People {
         super(name, soname, age, address);
     }
 
-    public void displayInfo() {
-        System.out.println(name + " " + soname + ", " + age + " лет, " + address.displayInfo());
-    }
+////    public String toString() {
+////        return System.out.println(name + " " + soname + ", " + age + " лет, " + address.displayInfo());
+//    }
 
     public void displayPay() {
         int workHour = 140;
@@ -21,13 +19,13 @@ public class Teacher extends People {
         System.out.println(workHour * workRate);
     }
 
-    void workHourChange(Integer newworkHour) {
-        workHour = newworkHour;
+    void workHourChange(Integer newWorkHour) {
+        workHour = newWorkHour;
         System.out.println(workHour * workRate);
     }
 
-    void workRateChange(Integer newworkRate) {
-        workRate = newworkRate;
+    void workRateChange(Integer newWorkRate) {
+        workRate = newWorkRate;
         System.out.println(workHour * workRate);
     }
 }

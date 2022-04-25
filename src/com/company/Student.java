@@ -1,8 +1,9 @@
-package com.company.people;
-
-import com.company.address.Address;
+package com.company;
 
 import java.util.ArrayList;
+
+import static com.company.PeopleList.student1;
+import static com.company.PeopleList.student2;
 
 public class Student extends People {
 
@@ -10,8 +11,10 @@ public class Student extends People {
         super(name, soname, age, address);
     }
 
-    ArrayList<Student> studentList = new ArrayList<>();
-    studentList.add
+    public static ArrayList<Student> students = new ArrayList<>(); {
+        students.add(student1);
+        students.add(student2);
+    }
 
     public void displayInfo() {
         System.out.println(name + " " +soname+ ", " + age + " лет, " + address.displayInfo());

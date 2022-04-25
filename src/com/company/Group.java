@@ -1,37 +1,28 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Group {
     private String name;
-    private String grade;
-    private Student student;
     private Teacher teacher;
+    private final ArrayList<Student> students;
 
-    public Group(String name, String grade, Student student, Teacher teacher) {
+
+    public Group(String name, Teacher teacher, ArrayList<Student> students) {
         this.name = name;
-        this.grade = grade;
-        this.student = student;
         this.teacher = teacher;
+        this.students = students;
     }
 
     public void displayInfo() {
-        System.out.println(name + " " + grade + ", " + student.toString() + " лет, " + teacher.toString());
+        System.out.println(students.forEach(System.out::println));
             }
-
-    public void setStudents(Student students) {
-        this.student = students;
-    }
 
     public String getName() {
         return name;
     }
 
-    public String getGrade() {
-        return grade;
-    }
-
-    public Student getStudent() {
-        return student;
-    }
 
     public Teacher getTeacher() {
         return teacher;
@@ -41,22 +32,11 @@ public class Group {
         this.name = name;
     }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    public void setStudent(Student student) {
-        this.student = student;
-    }
-
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
 
     void changeTeacher(Teacher newTeacher) {
         teacher = newTeacher;
-    }
-    void changeStudent(Student newStudent) {
-        student = newStudent;
     }
 }
