@@ -2,8 +2,8 @@ package com.company;
 
 public class Teacher extends People {
 
-    int workHour = 154;
-    int workRate = 8;
+    private int workHour = 154;
+    private int workRate = 8;
 
     public Teacher(String name, String soname, int age, Address address) {
         super(name, soname, age, address);

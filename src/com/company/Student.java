@@ -14,7 +14,12 @@ public class Student extends People {
     public static ArrayList<Student> students = new ArrayList<>(); {
         students.add(student1);
         students.add(student2);
+
+        students.forEach(m -> {
+            System.out.println(m);
+        });
     }
+
 
     public String toString() {
         return name + " " +soname+ ", " + age + " лет, " + address.displayInfo();
