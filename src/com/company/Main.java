@@ -10,9 +10,7 @@ public class Main {
 //        System.out.println(students.forEach(System.out::println));
 //
 //
-        teacher.displayPay();
-        teacher.workHourChange(14);
-        teacher.
+//        teacher.displayPay();
 //        students.forEach(m -> {
 //            System.out.println(m);
 //        });
