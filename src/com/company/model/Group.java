@@ -1,4 +1,4 @@
-package com.company;
+package com.company.model;
 
 import java.util.ArrayList;
 
@@ -14,8 +14,6 @@ public class Group {
         this.students = students;
     }
 
-    Group group = new Group("38 курс", teacher, students);
-
 //    public void displayInfo() {
 //        System.out.println(students.forEach(System.out::println));
 //            }
@@ -23,7 +21,6 @@ public class Group {
     public String getName() {
         return name;
     }
-
 
     public Teacher getTeacher() {
         return teacher;

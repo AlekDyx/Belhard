@@ -1,4 +1,6 @@
-package com.company;
+package com.company.base;
+
+import com.company.model.Address;
 
 public abstract class People {
 
@@ -39,7 +41,9 @@ public abstract class People {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if(age > 0) {
+            this.age = age;
+        }
     }
 
     public void setAddress(Address address) {
@@ -51,8 +55,11 @@ public abstract class People {
     }
 
     void changeAge(Integer newAge) {
-        age = newAge;
+        if (age > 0) {
+            age = newAge;
+        }
     }
+
     void changeAddress(Address newAddress) {
         address = newAddress;
     }
