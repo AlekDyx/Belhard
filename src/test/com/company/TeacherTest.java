@@ -26,11 +26,11 @@ public class TeacherTest {
         int amount = 10;
         int hour = 140;
 
-        int rez = amount * hour;
-        int realRez = teacher.displayPay();
+        int salary = amount * hour;
+        int realSalary = teacher.displayPay();
 
-        assertEquals(rez, realRez);
-        assertTrue(rez == realRez);
+        assertEquals(salary, realSalary);
+        assertTrue(salary == realSalary);
     }
 
     @Test

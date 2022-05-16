@@ -4,23 +4,17 @@ import com.company.base.People;
 
 public class Teacher extends People {
 
-    private int workHour;
-    private int workRate;
+    private int workHour = 140;
+    private int workRate = 10;
 
     public Teacher(String name, String soname, int age, Address address) {
         super(name, soname, age, address);
     }
 
-    public String toString() {
-        return name + " " + soname + ", " + age + " лет, " + address.displayInfo();
-    }
-
     public int displayPay() {
-        workHour = 140;
-        workRate = 10;
-        int rez = workHour * workRate;
-        System.out.println(rez);
-        return rez;
+        int salary = workHour * workRate;
+        System.out.println(salary);
+        return salary;
     }
 
     public void setWorkHour(int workHour) {

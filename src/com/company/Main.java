@@ -5,7 +5,9 @@ import com.company.model.Group;
 import com.company.model.Student;
 import com.company.model.Teacher;
 import com.company.repository.GroupRepository;
+import com.company.repository.TeacherRepository;
 import com.company.service.GroupService;
+import com.company.service.TeacherService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,14 +16,23 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int[] nums = new int[] { 5, 9, 6, 2, 8};
+
+        int length = nums.length;
+
+        System.out.println(length - 2);
+
+
         GroupRepository groupRepository = new GroupRepository();
         GroupService groupService = new GroupService(groupRepository);
 
         Address address1 = new Address("Минск", "Пушкина", 30, 5);
         Address address2 = new Address("Минск", "Победителей", 10, 5);
         Address address3 = new Address("Минск", "Машерова", 11, 30);
+
         Student student1 = new Student("Студент", "Первый", 28, address1);
         Student student2 = new Student("Студент", "Второй", 30, address2);
+
         Teacher teacher = new Teacher("Учитель", "Первый", 198, address3);
 
         ArrayList<Student> students = new ArrayList<>();

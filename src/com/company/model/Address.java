@@ -13,7 +13,7 @@ public class Address {
         this.appNumber = appNumber;
     }
 
-    public String displayInfo() {
+    public String toString() {
         return "г." + city + ", ул. " + street + ", дом " + homeNumber + ", квартира " + appNumber;
     }
 

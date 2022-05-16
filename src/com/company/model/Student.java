@@ -8,8 +8,4 @@ public class Student extends People {
         super(name, soname, age, address);
     }
 
-    public String toString() {
-        return name + " " +soname+ ", " + age + " лет, " + address.displayInfo();
-    }
-
 }

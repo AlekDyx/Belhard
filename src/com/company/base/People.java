@@ -51,7 +51,7 @@ public abstract class People {
     }
 
     public String toString() {
-        return name + " " +soname+ ", " + age + " лет, " + address.displayInfo();
+        return name + " " +soname+ ", " + age + " лет, " + address.toString();
     }
 
     void changeAge(Integer newAge) {
